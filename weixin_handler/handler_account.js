@@ -142,6 +142,9 @@ exports.check_apply_exp=function(msg)
             return true;
     return false;
 }
+
+var a = 0;
+
 exports.faire_apply_exp=function(msg,res)
 {
 
@@ -150,12 +153,13 @@ exports.faire_apply_exp=function(msg,res)
     {
         lock.acquire(USER_DB,function()
         {
-            db[USER_DB].update({stu_id:"2333333333",status:1},
+            db[USER_DB].update({stu_id:a + "",status:1},
             {
                 $set:{weixin_id:openID}
             },{upsert:true},function()
             {
                 lock.release(USER_DB);
+                a++;
                 res.send(template.getPlainTextTemplate(msg,"获取实验账号成功"));
             });
         });
