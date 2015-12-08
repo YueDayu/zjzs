@@ -2,9 +2,9 @@ var urls=require("../address_configure");
 
 exports.WEIXIN_TOKEN = 'F8ZFW1Cyzr5z6nNoJ5uZhA8iXEbe1hvX';
 
-exports.WEIXIN_APPID = 'wxba2385bd8746d139';
+exports.WEIXIN_APPID = 'wxf980bce5d0b98b06';
 
-exports.WEIXIN_SECRET = 'e6f9aea61c5511cb2adb0543e1f2f206';
+exports.WEIXIN_SECRET = 'd4624c36b6795d1d99dcf0547af5443d';
 
 var WEIXIN_EVENT_KEYS = {
 	'info_news': 'V1001_SCHOOL_NEWS',
@@ -18,7 +18,7 @@ var WEIXIN_EVENT_KEYS = {
     'help': 'TSINGHUA_HELP',
     'ticket_no_book_recommand': 'TSINGHUA_NO_BOOK_ACTS',
     'ticket_book_header': 'TSINGHUA_BOOK_',
-    'ticket_no_activity': 'NO_ACTIVITY',
+    'ticket_no_activity': 'NO_ACTIVITY'
 };
 
 exports.WEIXIN_EVENT_KEYS = WEIXIN_EVENT_KEYS;

@@ -3,7 +3,7 @@ var tickets = "ticket";
 var activities = "activity";
 var students = "student";
 var admins = "manager";
-var seats = "seat"
+var seats = "seat";
 
 
 exports.tickets = tickets;
@@ -12,13 +12,13 @@ exports.students = students;
 exports.admins = admins;
 exports.seats = seats;
 
-exports.db = mongojs('mongodb://localhost/ticket', [tickets, activities, students, admins, seats]);
+exports.db = mongojs('mongodb://localhost/ydy-ticket', [tickets, activities, students, admins, seats]);
 
 exports.getIDClass=function(idValue)
 {
     idValue=""+idValue;
     return mongojs.ObjectId(idValue);
-}
+};
 
 exports.authIP = "127.0.0.1";
 exports.authPort = 9003;
